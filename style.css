@@ -170,6 +170,50 @@ header.shadow {
     margin: 0.7rem 0 1rem;
 }
 
+
+.stack {
+    align-items: center;
+    bottom: 0;
+    color: #767676;
+    display: flex;
+    font-size: 1rem;
+    left: 0;
+    position: absolute;
+}
+
+.stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+}
+
+.stack ul li {
+    cursor: pointer;
+}
+
+.imgstack {
+    height: 5rem;
+    transition: all .3s ease-in-out;
+    width: 11rem;
+}
+
+.stack p {
+    border-right: 2px solid rgba(45, 46, 50, .5);
+    color: #2d2e32;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    margin-right: 7rem;
+    padding-right: 2rem;
+}
+
+@media (max-width: 900px) {
+    .stack {
+        flex-direction: column;
+        position: static;
+    }
+}
+
 .social {
     display: flex;
     flex-direction: column;
